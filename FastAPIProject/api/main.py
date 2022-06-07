@@ -12,7 +12,7 @@ app = _fastapi.FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Greetings": "Welcome to Address Book"}
+    return {"Greetings": "Welcome to Address Book. Please visit /docs to go to Swagger API documentation"}
 
 
 @app.post("/addressbooks/", response_model=_schemas.AddressBook)
